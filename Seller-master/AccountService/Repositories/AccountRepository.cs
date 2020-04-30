@@ -23,8 +23,18 @@ namespace AccountService.Repositories
 
         public Seller ValidateSeller(string uname, string pwd)
         {
+
             Seller b = _context.Seller.SingleOrDefault(e => e.Username == uname && e.Password == pwd);
-            return b;
+            if(b.Username==uname&&b.Password==pwd)
+            {
+                return b;
+            }
+            else
+            {
+                Console.WriteLine("Not Valid User");
+                return b;
+            }
+           
         }
     }
 }

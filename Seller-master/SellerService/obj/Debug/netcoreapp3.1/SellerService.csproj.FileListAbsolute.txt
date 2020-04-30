@@ -10,9 +10,13 @@ E:\Seller-master\Seller-master\SellerService\bin\Debug\netcoreapp3.1\SellerServi
 E:\Seller-master\Seller-master\SellerService\obj\Debug\netcoreapp3.1\SellerService.csprojAssemblyReference.cache
 E:\Seller-master\Seller-master\SellerService\obj\Debug\netcoreapp3.1\staticwebassets\SellerService.StaticWebAssets.Manifest.cache
 E:\Seller-master\Seller-master\SellerService\obj\Debug\netcoreapp3.1\staticwebassets\SellerService.StaticWebAssets.xml
-E:\Seller-master\Seller-master\SellerService\obj\Debug\netcoreapp3.1\SellerService.MvcApplicationPartsAssemblyInfo.cache
 E:\Seller-master\Seller-master\SellerService\obj\Debug\netcoreapp3.1\SellerService.AssemblyInfoInputs.cache
 E:\Seller-master\Seller-master\SellerService\obj\Debug\netcoreapp3.1\SellerService.AssemblyInfo.cs
 E:\Seller-master\Seller-master\SellerService\obj\Debug\netcoreapp3.1\SellerService.RazorTargetAssemblyInfo.cache
 E:\Seller-master\Seller-master\SellerService\obj\Debug\netcoreapp3.1\SellerService.dll
 E:\Seller-master\Seller-master\SellerService\obj\Debug\netcoreapp3.1\SellerService.pdb
+E:\Seller-master\Seller-master\SellerService\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+E:\Seller-master\Seller-master\SellerService\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+E:\Seller-master\Seller-master\SellerService\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Seller-master\Seller-master\SellerService\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Seller-master\Seller-master\SellerService\obj\Debug\netcoreapp3.1\SellerService.csproj.CopyComplete

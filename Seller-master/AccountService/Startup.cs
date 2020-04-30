@@ -11,6 +11,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using AccountService.Repositories;
 using AccountService.Models;
+using Microsoft.OpenApi.Models;
+using AccountService.GlobalExceptionFilter;
 
 namespace AccountService
 {
@@ -37,6 +39,18 @@ namespace AccountService
                          .AllowAnyHeader());
 
             });
+            services.AddApplicationInsightsTelemetry(Configuration);
+            services.AddMvc(
+                config => {
+                    config.Filters.Add(typeof(CustomExceptionFilter));
+                }
+            );
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,11 +60,20 @@ namespace AccountService
             {
                 app.UseDeveloperExceptionPage();
             }
-
+          
             app.UseRouting();
 
             app.UseAuthorization();
             app.UseCors("AllowOrigin");
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
